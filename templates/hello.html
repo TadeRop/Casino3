@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Another casino</title>
+</head>
+<body>
+    <h1>Hello, gambler!</h1>
+
+    {% if guess %}
+      <p>Congratz!</p>
+    {% else %}
+    <form action="/" method="post">
+    Choose a lucky number: <input type="number" name="guess" /><br />
+
+    <button type="submit">Send</button>
+    </form>
+    {% endif %}
+</body>
+</html>
